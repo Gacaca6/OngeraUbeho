@@ -1,0 +1,61 @@
+/* ===================================================================
+   THEME TOKENS — Ongera Ubeho brand (from the logo):
+   deep forest green (hands) · terracotta (parent) · golden amber (child)
+   on warm cream. Light, humanitarian, premium NGO quality.
+   =================================================================== */
+:root {
+  /* Surfaces */
+  --bg: #f7f5f0;
+  --bg-grad-1: rgba(207, 144, 64, 0.14);
+  --bg-grad-2: rgba(44, 90, 62, 0.1);
+  --surface: rgba(255, 255, 255, 0.82);
+  --surface-2: rgba(34, 69, 47, 0.055);
+
+  /* Ink */
+  --fg: #22301f;
+  --fg-muted: #54604f;
+  --fg-faint: #8a947f;
+
+  /* Hairlines */
+  --hair: rgba(34, 69, 47, 0.14);
+  --hair-2: rgba(34, 69, 47, 0.08);
+
+  /* Accent — ONE accent: deep green rising into golden amber (the logo). */
+  --primary: #2c5a3e;
+  --accent: linear-gradient(
+    115deg,
+    #1a3524 0%,
+    #2c5a3e 38%,
+    #58743a 70%,
+    #b57e2c 100%
+  );
+  --accent-ink: #f7f5f0;
+
+  /* Radius */
+  --radius: 20px;
+  --radius-sm: 12px;
+  --radius-lg: 26px;
+
+  /* Depth */
+  --shadow: 0 40px 90px -45px rgba(18, 38, 25, 0.45);
+  --glow: 0 30px 80px -40px rgba(44, 90, 62, 0.4);
+
+  /* Type */
+  --font-head: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Motion */
+  --dur: 0.4s;
+  --ease: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Atmosphere */
+  --grain: 0.028;
+  --vignette: rgba(63, 48, 22, 0.1);
+
+  /* Responsive gutter — fluid side / vertical padding */
+  --gutter: clamp(28px, 6vw, 120px);
+  --gutter-y: clamp(40px, 8vh, 96px);
+}
