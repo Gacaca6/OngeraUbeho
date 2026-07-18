@@ -30,7 +30,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:var(--font-body);color:var(--ink);background:var(--cream);line-height:1.65;font-size:16.5px;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
+img{max-width:100%;display:block;height:auto}
 a{color:inherit}
 .container{width:min(1160px,92%);margin-inline:auto}
 h1,h2,h3,.display{font-family:var(--font-display);line-height:1.12;color:var(--green-900);font-weight:600}
@@ -325,7 +325,7 @@ footer{background:var(--green-950);color:#a9bcaa;padding:3.2rem 0 2rem;font-size
 .footer-brand-row .fname{font-family:var(--font-display);font-weight:700;font-size:1.25rem;color:#f3f0e8;line-height:1.15}
 .footer-brand-row .ftag{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--amber-500);font-weight:600}
 .footer-brand p{color:#8ba18c;max-width:26rem;font-size:.9rem}
-footer h4{color:#e8efe8;font-family:var(--font-display);font-size:1rem;margin-bottom:1rem}
+footer h3.foot-h{color:#e8efe8;font-family:var(--font-display);font-size:1rem;font-weight:600;margin-bottom:1rem}
 footer ul{list-style:none;display:flex;flex-direction:column;gap:.55rem}
 footer ul a{text-decoration:none;color:#a9bcaa;transition:color .2s}
 footer ul a:hover{color:var(--amber-500)}

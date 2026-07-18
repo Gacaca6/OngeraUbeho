@@ -24,8 +24,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap"></noscript>
 <link rel="stylesheet" href="css/styles.css">
+<link rel="preload" as="image" href="assets/img/community-joy.webp" fetchpriority="high">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -83,7 +85,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
     </div>
     <div class="photo-frame">
       <div class="arch">
-        <img src="assets/img/community-joy.jpg" alt="Young Rwandan women laughing together in their community" width="1000" height="666" fetchpriority="high">
+        <img src="assets/img/community-joy.webp" alt="Young Rwandan women laughing together in their community" width="1000" height="666" fetchpriority="high">
       </div>
     </div>
   </div>
@@ -216,7 +218,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
 
 <!-- ================= QUOTE BAND ================= -->
 <section class="quote-band">
-  <div class="bg" aria-hidden="true"><img src="assets/img/kigali-dusk.jpg" alt="" loading="lazy"></div>
+  <div class="bg" aria-hidden="true"><img width="1400" height="788" src="assets/img/kigali-dusk.webp" alt="" loading="lazy"></div>
   <div class="container">
     <blockquote class="reveal">We publish our targets before we start, and our results as they happen — because families trust people who keep their word, and so do funders.</blockquote>
     <p class="attribution reveal">— The Ongera Ubeho founding team, Kigali</p>
@@ -246,7 +248,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-brand-row">
-          <img src="assets/logo-mark.png" alt="Ongera Ubeho emblem">
+          <img width="319" height="350" src="assets/logo-mark.png" alt="Ongera Ubeho emblem">
           <span>
             <span class="fname">Ongera Ubeho</span><br>
             <span class="ftag">Live More · Choose Life</span>
@@ -260,7 +262,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
         </div>
       </div>
       <div>
-        <h4>Explore</h4>
+        <h3 class="foot-h">Explore</h3>
         <ul>
           <li><a href="/about">About Us</a></li>
           <li><a href="/programs">Our Work</a></li>
@@ -270,7 +272,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h3 class="foot-h">Contact</h3>
         <ul>
           <li><a href="mailto:Ongeraubehohubrwanda@gmail.com">Ongeraubehohubrwanda@gmail.com</a></li>
           <li>Kigali, Rwanda</li>

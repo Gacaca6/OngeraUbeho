@@ -24,8 +24,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap"></noscript>
 <link rel="stylesheet" href="css/styles.css">
+<link rel="preload" as="image" href="assets/img/hero.webp" fetchpriority="high">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -115,7 +117,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
     <div class="hero-photo">
       <div class="photo-frame">
         <div class="arch">
-          <img src="assets/img/hero.jpg" alt="Four young Rwandans sitting together on steps, laughing, with laptops open" width="800" height="920" fetchpriority="high">
+          <img src="assets/img/hero.webp" alt="Four young Rwandans sitting together on steps, laughing, with laptops open" width="800" height="920" fetchpriority="high">
         </div>
       </div>
       <div class="hero-chip chip-1">
@@ -127,7 +129,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
         <span>Women &amp; girls<small>among youth beneficiaries</small></span>
       </div>
       <div class="hero-emblem" aria-hidden="true">
-        <img src="assets/logo-mark.png" alt="">
+        <img width="319" height="350" src="assets/logo-mark.png" alt="">
       </div>
     </div>
   </div>
@@ -160,7 +162,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
       </div>
       <div class="split-media reveal">
         <div class="rounded">
-          <img src="assets/img/classroom.jpg" alt="A full classroom of Rwandan children at wooden desks looking toward the blackboard" width="1200" height="799" loading="lazy">
+          <img src="assets/img/classroom.webp" alt="A full classroom of Rwandan children at wooden desks looking toward the blackboard" width="1200" height="799" loading="lazy">
         </div>
         <div class="split-badge"><span class="chip-num">12–25</span> the ages most at risk</div>
       </div>
@@ -179,7 +181,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
     <div class="track-grid">
       <article class="track track-1 reveal">
         <div class="track-photo">
-          <img src="assets/img/mentor-talk.jpg" alt="Two women in warm conversation at a table" width="1000" height="667" loading="lazy">
+          <img src="assets/img/mentor-talk.webp" alt="Two women in warm conversation at a table" width="1000" height="667" loading="lazy">
         </div>
         <div class="track-body">
           <span class="track-label">Track 1</span>
@@ -190,7 +192,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
       </article>
       <article class="track track-2 reveal">
         <div class="track-photo">
-          <img src="assets/img/outreach.jpg" alt="Three young people sitting together on a bench looking out over water" width="900" height="1348" loading="lazy" style="object-position:center 30%">
+          <img src="assets/img/outreach.webp" alt="Three young people sitting together on a bench looking out over water" width="900" height="1348" loading="lazy" style="object-position:center 30%">
         </div>
         <div class="track-body">
           <span class="track-label">Track 2</span>
@@ -209,7 +211,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
     <div class="stat-band">
       <div class="split-media reveal">
         <div class="rounded">
-          <img src="assets/img/community-joy.jpg" alt="Young Rwandan women laughing together in their community" width="1000" height="666" loading="lazy">
+          <img src="assets/img/community-joy.webp" alt="Young Rwandan women laughing together in their community" width="1000" height="666" loading="lazy">
         </div>
       </div>
       <div class="reveal">
@@ -230,7 +232,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
 
 <!-- ================= QUOTE BAND ================= -->
 <section class="quote-band">
-  <div class="bg" aria-hidden="true"><img src="assets/img/kigali-dusk.jpg" alt="" loading="lazy"></div>
+  <div class="bg" aria-hidden="true"><img width="1400" height="788" src="assets/img/kigali-dusk.webp" alt="" loading="lazy"></div>
   <div class="container">
     <blockquote class="reveal">Ongera Ubeho does not wait for the problem to become a tragedy. It intervenes early, speaks the community's language, and gives every young Rwandan a path back to dignity.</blockquote>
     <p class="attribution reveal">— The Ongera Ubeho founding team, Kigali</p>
@@ -260,7 +262,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-brand-row">
-          <img src="assets/logo-mark.png" alt="Ongera Ubeho emblem">
+          <img width="319" height="350" src="assets/logo-mark.png" alt="Ongera Ubeho emblem">
           <span>
             <span class="fname">Ongera Ubeho</span><br>
             <span class="ftag">Live More · Choose Life</span>
@@ -274,7 +276,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
         </div>
       </div>
       <div>
-        <h4>Explore</h4>
+        <h3 class="foot-h">Explore</h3>
         <ul>
           <li><a href="/about">About Us</a></li>
           <li><a href="/programs">Our Work</a></li>
@@ -284,7 +286,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h3 class="foot-h">Contact</h3>
         <ul>
           <li><a href="mailto:Ongeraubehohubrwanda@gmail.com">Ongeraubehohubrwanda@gmail.com</a></li>
           <li>Kigali, Rwanda</li>

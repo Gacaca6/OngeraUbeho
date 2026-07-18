@@ -24,8 +24,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap"></noscript>
 <link rel="stylesheet" href="css/styles.css">
+<link rel="preload" as="image" href="assets/img/young-man.webp" fetchpriority="high">
 <script>
 !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
 posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https://us.i.posthog.com',defaults:'2025-05-24'});
@@ -74,7 +76,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
     </div>
     <div class="photo-frame">
       <div class="arch">
-        <img src="assets/img/young-man.jpg" alt="A young African man smiling confidently outdoors" width="800" height="533" fetchpriority="high" style="object-position:center 25%">
+        <img src="assets/img/young-man.webp" alt="A young African man smiling confidently outdoors" width="800" height="533" fetchpriority="high" style="object-position:center 25%">
       </div>
     </div>
   </div>
@@ -134,7 +136,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
       </div>
       <div class="split-media reveal">
         <div class="arch">
-          <img src="assets/img/boy-smile.jpg" alt="A young Rwandan boy smiling warmly" width="900" height="600" loading="lazy" style="object-position:center 15%">
+          <img src="assets/img/boy-smile.webp" alt="A young Rwandan boy smiling warmly" width="900" height="600" loading="lazy" style="object-position:center 15%">
         </div>
       </div>
     </div>
@@ -334,7 +336,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
 <section class="cta" style="padding-top:1rem" id="contact">
   <div class="container">
     <div class="cta-box photo reveal">
-      <div class="cta-bg" aria-hidden="true"><img src="assets/img/kigali-dusk.jpg" alt="" loading="lazy"></div>
+      <div class="cta-bg" aria-hidden="true"><img width="1400" height="788" src="assets/img/kigali-dusk.webp" alt="" loading="lazy"></div>
       <h2>Start the conversation today.</h2>
       <p>One email is all it takes. Tell us who you are and how you would like to help — we reply to every message personally.</p>
       <div class="cta-actions">
@@ -353,7 +355,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-brand-row">
-          <img src="assets/logo-mark.png" alt="Ongera Ubeho emblem">
+          <img width="319" height="350" src="assets/logo-mark.png" alt="Ongera Ubeho emblem">
           <span>
             <span class="fname">Ongera Ubeho</span><br>
             <span class="ftag">Live More · Choose Life</span>
@@ -367,7 +369,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
         </div>
       </div>
       <div>
-        <h4>Explore</h4>
+        <h3 class="foot-h">Explore</h3>
         <ul>
           <li><a href="/about">About Us</a></li>
           <li><a href="/programs">Our Work</a></li>
@@ -377,7 +379,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
         </ul>
       </div>
       <div>
-        <h4>Contact</h4>
+        <h3 class="foot-h">Contact</h3>
         <ul>
           <li><a href="mailto:Ongeraubehohubrwanda@gmail.com">Ongeraubehohubrwanda@gmail.com</a></li>
           <li>Kigali, Rwanda</li>
