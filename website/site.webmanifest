@@ -1,0 +1,13 @@
+{
+  "name": "Ongera Ubeho — Youth & Family Mentorship Hub",
+  "short_name": "Ongera Ubeho",
+  "description": "Community-based youth and family mentorship hub in Rwanda.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#f7f5f0",
+  "theme_color": "#1a3524",
+  "icons": [
+    { "src": "/assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
