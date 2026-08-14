@@ -1,5 +1,8 @@
+# https://www.robotstxt.org/
 User-agent: *
 Allow: /
+
+# Utility pages — no search value
 Disallow: /thank-you
 
 Sitemap: https://ongera-ubeho.vercel.app/sitemap.xml
