@@ -5,4 +5,4 @@ Allow: /
 # Utility pages — no search value
 Disallow: /thank-you
 
-Sitemap: https://ongera-ubeho.vercel.app/sitemap.xml
+Sitemap: https://ongeraubeho.rw/sitemap.xml
