@@ -391,6 +391,36 @@ footer ul a:hover{color:var(--amber-500)}
   .form-actions .btn{width:100%}
 }
 
+/* ---------- Social bar (footer) ---------- */
+.social-row{display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;padding:0 0 1.8rem;margin-bottom:.4rem}
+.social-label{font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--amber-500)}
+.social-links{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;gap:.6rem;list-style:none;margin:0;padding:0}
+.social-links a{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#cdd9cd;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);transition:transform .2s ease,background .2s ease,color .2s ease,border-color .2s ease}
+.social-links a:hover,.social-links a:focus-visible{transform:translateY(-3px);color:#fff;border-color:transparent}
+.social-links .s-instagram:hover,.social-links .s-instagram:focus-visible{background:linear-gradient(45deg,#f09433,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888)}
+.social-links .s-tiktok:hover,.social-links .s-tiktok:focus-visible{background:#fe2c55}
+.social-links .s-linkedin:hover,.social-links .s-linkedin:focus-visible{background:#0a66c2}
+.social-links .s-x:hover,.social-links .s-x:focus-visible{background:#fff;color:#0b0b0b}
+.social-links .s-whatsapp:hover,.social-links .s-whatsapp:focus-visible{background:#25d366}
+
+/* ---------- Floating WhatsApp button ---------- */
+.wa-float{position:fixed;right:clamp(14px,3vw,26px);bottom:clamp(14px,3vw,26px);z-index:60;display:inline-flex;align-items:center;gap:.55rem;height:56px;padding:0 16px;border-radius:999px;background:#25d366;color:#fff;text-decoration:none;box-shadow:0 8px 24px rgba(18,38,25,.28);transition:transform .2s ease,box-shadow .2s ease,background .2s ease}
+.wa-float svg{flex:none}
+.wa-float:hover,.wa-float:focus-visible{background:#1eb85a;transform:translateY(-3px);box-shadow:0 12px 30px rgba(18,38,25,.34)}
+.wa-float-label{font-weight:600;font-size:.94rem;white-space:nowrap;max-width:0;overflow:hidden;opacity:0;transition:max-width .3s ease,opacity .25s ease}
+.wa-float:hover .wa-float-label,.wa-float:focus-visible .wa-float-label{max-width:160px;opacity:1}
+@media (max-width:760px){
+  .wa-float{height:52px;padding:0 13px}
+  .wa-float-label{display:none}
+  .social-row{gap:.7rem;padding-bottom:1.5rem}
+}
+@media (prefers-reduced-motion:reduce){
+  .wa-float,.wa-float-label,.social-links a{transition:none}
+  .wa-float:hover{transform:none}
+  .social-links a:hover{transform:none}
+  .wa-float:hover .wa-float-label,.wa-float:focus-visible .wa-float-label{max-width:160px;opacity:1}
+}
+
 /* Reveal animation */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
