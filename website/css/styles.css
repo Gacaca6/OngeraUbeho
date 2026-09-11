@@ -391,6 +391,30 @@ footer ul a:hover{color:var(--amber-500)}
   .form-actions .btn{width:100%}
 }
 
+/* ---------- News / field reports ---------- */
+.post{max-width:52rem;margin-inline:auto}
+.post-meta{display:flex;flex-wrap:wrap;align-items:center;gap:.55rem;font-size:.85rem;color:var(--ink-soft);margin-bottom:1rem}
+.post-meta .pill{background:var(--green-100);color:var(--green-800);font-weight:700;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding:.3rem .75rem;border-radius:999px}
+.post h2{margin-top:2.4rem;margin-bottom:.8rem;font-size:clamp(1.4rem,2.6vw,1.85rem)}
+.post p{font-size:1.03rem}
+.post p + p{margin-top:.9rem}
+.post .lede{font-size:1.15rem;color:var(--ink);margin-bottom:.6rem}
+.post-figure{margin:2rem 0 .6rem;border-radius:calc(var(--radius) + 6px);overflow:hidden;box-shadow:var(--shadow-md)}
+.post-figure img{width:100%;height:auto;display:block}
+.post-caption{font-size:.85rem;color:var(--ink-soft);opacity:.85;margin-bottom:2rem;text-align:center}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:1rem;margin:1.6rem 0}
+.gallery figure{margin:0}
+.gallery .rounded{aspect-ratio:16/9;box-shadow:var(--shadow-sm)}
+.gallery figcaption{font-size:.82rem;color:var(--ink-soft);margin-top:.5rem;line-height:1.45}
+.post-quote{margin:2.2rem 0;padding:1.4rem 1.6rem;border-radius:var(--radius);background:var(--cream-2);font-family:var(--font-display);font-size:clamp(1.05rem,2vw,1.25rem);color:var(--green-800);line-height:1.5}
+.post-note{margin-top:2.4rem;padding:1.2rem 1.4rem;border-radius:var(--radius);background:var(--amber-100);border:1px solid rgba(181,126,44,.3);font-size:.92rem;color:#6b4f1c}
+.news-teaser{background:var(--cream-2)}
+.news-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:3rem;align-items:center}
+.news-shots{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.news-shots .rounded{aspect-ratio:16/10;box-shadow:var(--shadow-sm)}
+.news-shots .rounded:first-child{grid-column:1 / -1;aspect-ratio:16/8}
+@media (max-width:1000px){ .news-grid{grid-template-columns:1fr;gap:2.2rem} }
+
 /* ---------- Social bar (footer) ---------- */
 .social-row{display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;padding:0 0 1.8rem;margin-bottom:.4rem}
 .social-label{font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--amber-500)}
