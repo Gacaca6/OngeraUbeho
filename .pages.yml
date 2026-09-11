@@ -1,0 +1,94 @@
+# Ongera Ubeho — content settings for Pages CMS (app.pagescms.org)
+# This tells the CMS what you can edit and which boxes to show you.
+
+media:
+  input: website/assets/img/uploads
+  output: /assets/img/uploads
+  categories: [image]
+
+content:
+  - name: posts
+    label: News & Field Reports
+    type: collection
+    path: content/posts
+    filename: '{year}-{month}-{day}-{primary}.md'
+    view:
+      fields: [cover, title, date]
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+        description: The headline of the story. Keep it short and human.
+
+      - name: date
+        label: Date of the action
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+        description: The day it happened. Stories are shown newest first.
+
+      - name: label
+        label: Report number
+        type: string
+        default: Field Report 02
+        description: 'Shown as a small badge, e.g. "Field Report 02".'
+
+      - name: location
+        label: Place
+        type: string
+        default: Kigali, Rwanda
+        description: Where it happened.
+
+      - name: summary
+        label: Short summary
+        type: text
+        required: true
+        description: Two or three sentences. This appears on the news list and when
+          the link is shared on Facebook, WhatsApp or LinkedIn.
+
+      - name: cover
+        label: Main photo
+        type: image
+        required: true
+        description: The big photo at the top. Choose the one that best shows the work.
+
+      - name: cover_caption
+        label: Main photo caption
+        type: string
+        description: One line describing the main photo.
+
+      - name: body
+        label: The story
+        type: rich-text
+        description: Write what happened. Use the Heading style for section titles
+          such as "What we did" or "What happens next".
+
+      - name: quote
+        label: Highlight sentence
+        type: text
+        description: Optional. One powerful sentence, shown large in a box.
+
+      - name: gallery
+        label: More photos
+        type: object
+        list: true
+        description: Add as many photos as you like. Each one can have a caption.
+        fields:
+          - name: image
+            label: Photo
+            type: image
+          - name: caption
+            label: Caption
+            type: string
+
+      - name: privacy_note
+        label: Show the privacy note
+        type: boolean
+        default: true
+        description: Keep this ON for any story with photos of young people or families.
