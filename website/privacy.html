@@ -52,6 +52,12 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
  ]
 }
 </script>
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1N77NT67NY"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-1N77NT67NY');
+</script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -97,7 +103,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
     <h2>What we collect, and why</h2>
     <ul>
       <li><b>Information you send us through forms.</b> When you use the enquiry forms on our Get Involved page, we receive what you type — such as your name, email address, phone number, organisation, message, and any document you choose to attach. We use it for one purpose only: to read your enquiry and reply to you.</li>
-      <li><b>Basic visit statistics.</b> We use PostHog, a privacy-focused analytics tool, to understand how many people visit the site, which pages they read, and roughly where visitors come from. This helps us improve the site. It does not tell us who you are.</li>
+      <li><b>Basic visit statistics.</b> We use PostHog, a privacy-focused analytics tool, to understand how many people visit the site, which pages they read, and roughly where visitors come from. This helps us improve the site. It does not tell us who you are. We also use Google Analytics for the same purpose, which stores a cookie in your browser to recognise a returning visit.</li>
     </ul>
 
     <h2>How your form messages travel</h2>
@@ -115,6 +121,7 @@ posthog.init('phc_ftrEJPg9rsRF6OL7sy9iQOokRK4zGSTMThCXQxfoyX3',{api_host:'https:
       <li><b>Vercel</b> — hosts the website.</li>
       <li><b>FormSubmit</b> — delivers form submissions to our inbox.</li>
       <li><b>PostHog</b> — anonymous visit statistics.</li>
+      <li><b>Google Analytics</b> — visit statistics (sets cookies in your browser).</li>
     </ul>
 
     <h2>Your choices</h2>
